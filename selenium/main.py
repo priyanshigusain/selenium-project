@@ -8,16 +8,13 @@ driver.maximize_window()
 
 driver.get("https://www.netflix.com/in/login")
 # username(before importing write your login id and password in info.py file)
-driver.find_element_by_xpath(
-    '/html/body/div[1]/div/div[3]/div/div/div[1]/form/div[1]/div[1]/div/label/input').send_keys(LoginId)
+driver.find_element_by_xpath('/html/body/div[1]/div/div[3]/div/div/div[1]/form/div[1]/div[1]/div/label/input').send_keys(LoginId)
 
 # password
-driver.find_element_by_xpath(
-    '/html/body/div[1]/div/div[3]/div/div/div[1]/form/div[2]/div/div/label/input').send_keys(password)
+driver.find_element_by_xpath('/html/body/div[1]/div/div[3]/div/div/div[1]/form/div[2]/div/div/label/input').send_keys(password)
 
 # signin
-driver.find_element_by_xpath(
-    '/html/body/div[1]/div/div[3]/div/div/div[1]/form/button').click()
+driver.find_element_by_xpath('/html/body/div[1]/div/div[3]/div/div/div[1]/form/button').click()
 # profile Selection
 time.sleep(2)
 # instead of profile_name enter your own profile_name
